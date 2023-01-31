@@ -166,7 +166,18 @@ img {
     transform: skewY(-2deg);
 }
 
+/* stats */
 
+.stats {
+
+    padding-top: 100px;
+    text-align: center;
+}
+
+.text_center {
+
+    justify-content: center;
+}
 
 /* utilities */
 
@@ -204,4 +215,22 @@ img {
     padding: 20px;
     margin: 10px;
     color: #333;
+}
+
+.grid-3 {
+
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.my-1 {
+
+margin: 1rem 0;
+padding: 1rem;
+
+}
+
+.my-4 {
+
+    margin: 2rem 0;
+    padding: 1rem;
 }
