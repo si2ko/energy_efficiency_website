@@ -35,6 +35,11 @@ h1, h2 {
     font-size: 30px;
 }
 
+h4 {
+
+    font-size: 22px;
+}
+
 p {
 
     margin: 10px 0px;
@@ -177,7 +182,28 @@ img {
 .text_center {
 
     justify-content: center;
+    text-align: center
 }
+
+.stats-heading {
+
+    max-width: 500px;
+    margin: auto;
+}
+
+.stats .grid h3 {
+
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.stats .grid p {
+
+    font-size: 20px;
+}
+
+
+
 
 /* utilities */
 
