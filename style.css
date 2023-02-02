@@ -40,6 +40,11 @@ h4 {
     font-size: 22px;
 }
 
+h5 {
+
+    font-size: 16px;
+}
+
 p {
 
     margin: 10px 0px;
@@ -259,4 +264,20 @@ padding: 1rem;
 
     margin: 2rem 0;
     padding: 1rem;
+}
+
+.py-5 {
+    padding: 1rem 0;
+}
+
+.bg-dark,
+.btn-dark {
+    background-color: #047aed;
+    color: #333;
+  }
+.details {
+
+    display: inline-block;
+    padding: 2rem;
+    
 }
