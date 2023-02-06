@@ -64,8 +64,8 @@ img {
 .navbar {
 
     background-color: #047aed;
-    color: #fff
-    height: 70px;
+    color: #fff;
+    height: 190px;
 }
 
 .navbar .flex {
@@ -220,9 +220,10 @@ img {
 .container {
 
     max-width: 1110px;
-    margin: 0 auto;
+    margin: 0 auto; 
     overflow: auto;
-    padding: 0;
+    padding: 0 40px;
+    overflow: hidden;
 }
 
 .flex {
@@ -353,3 +354,43 @@ padding: 1rem;
         margin: auto;
     }
 }
+
+/* dropdown */
+
+.navbar .nav {
+    list-style:none inside;
+    margin:0;
+    padding:0;
+    text-align:center;
+    }
+.navbar .nav li {
+    display:block;
+    position:relative;
+    float:left;
+    background: #047aed; /* menu background color */
+    }
+.navbar .nav li a {
+    display:block;
+    list-style:none inside;
+    padding:4px;
+    font-size: 22px;
+    text-decoration:none;
+    width:200px; /* this is the width of the menu items */
+    color:#ffffff; /* list item font color */
+    }
+.navbar .nav li li a {font-size:100%;} /* smaller font size for sub menu items */
+.navbar .nav li:hover {background:#047aed;} /* highlights current hovered list item and the parent list items when hovering over sub menues */
+.navbar .nav ul {
+    position:absolute;
+    overflow: hidden;
+    padding:0;
+    left:0;
+    display:none; /* hides sublists */
+    }
+.navbar .nav li:hover ul ul {display:none;} /* hides sub-sublists */
+.navbar .nav li:hover ul {display:block;} /* shows sublist on hover */
+.navbar .nav li li:hover ul {
+    display:block; /* shows sub-sublist on hover */
+    margin-left:200px; /* this should be the same width as the parent list item */
+    margin-top:-35px; /* aligns top of sub menu with top of list item */
+    }
