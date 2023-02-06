@@ -24,7 +24,9 @@ a {
 
     text-decoration: none;
     color:#333;
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
 }
 
 h1, h2 {
@@ -42,7 +44,9 @@ h4 {
 
 h5 {
 
-    font-size: 16px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
 }
 
 p {
@@ -93,6 +97,7 @@ img {
     background-color:#047aed;
     color: #fff;
     position: relative;
+    padding-left: 10px;
 }
 
 .showcase h1 {
@@ -253,6 +258,12 @@ img {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+.footer {
+
+    font-size: 16px;
+
+}
+
 .my-1 {
 
 margin: 1rem 0;
@@ -280,4 +291,65 @@ padding: 1rem;
     display: inline-block;
     padding: 2rem;
     
+}
+
+.fa-phone,
+.fa-envelope,
+.fa-circle-dot {
+    color : #fff;
+  }
+
+/* tablet and under */
+
+@media(max-width: 768px) {
+    .gird,
+    .showcase .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .showcase {
+
+        height:auto
+        }    
+}
+
+
+
+/* mobile */
+@media (max-width:500px) {
+
+    .navbar {
+
+        height: 110px;
+    
+    }
+    .navbar .flex {
+        flex-direction: column;
+
+    }
+    .navbar ul {
+
+        padding: 10px;
+        background-color: rgba(0,0,0,1);
+    }
+
+    .gird,
+    .showcase .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .showcase {
+
+        height:auto
+    }
+    .showcase-text {
+
+        text-align: center;
+        margin-top: 30px;
+    }
+    .showcase-form {
+        justify-self: center;
+        margin: auto;
+    }
 }
