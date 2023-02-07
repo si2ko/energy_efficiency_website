@@ -89,6 +89,23 @@ img {
     margin: 0 5 px;
 }
 
+.oferta_navbar {
+
+    background-color: #047aed;
+}
+.oferta_navbar a {
+
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color:#333;
+    padding: 8px;
+    margin: 4px;
+}
+.oferta_navbar p {
+
+    background-color: #581010;
+}
 /* showcase */
 
 .showcase {
@@ -192,7 +209,7 @@ img {
 .text_center {
 
     justify-content: center;
-    text-align: center
+    text-align: center;
 }
 
 .stats-heading {
@@ -201,19 +218,45 @@ img {
     margin: auto;
 }
 
-.stats .grid h3 {
+.stats h3 {
 
-    font-size: 28px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.stats p {
+
+    font-size: 22px;
     font-weight: bold;
 }
+/* footer */
 
-.stats .grid p {
+.footer {
 
-    font-size: 20px;
+    font-size: 16px;
+    padding: 4px;
+
 }
 
+.footer p {
 
+    color: #fff;
+}
 
+.footer h1 {
+
+    color: #fff;
+}
+
+.footer ul {
+
+    padding: 10px;
+}
+
+.footer li {
+
+    padding: 4px;
+}
 
 /* utilities */
 
@@ -222,7 +265,7 @@ img {
     max-width: 1110px;
     margin: 0 auto; 
     overflow: auto;
-    padding: 0 40px;
+    padding: 0 25px;
     overflow: hidden;
 }
 
@@ -259,11 +302,7 @@ img {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.footer {
 
-    font-size: 16px;
-
-}
 
 .my-1 {
 
@@ -284,7 +323,7 @@ padding: 1rem;
 
 .bg-dark,
 .btn-dark {
-    background-color: #047aed;
+    background-color: #131058;
     color: #333;
   }
 .details {
@@ -394,3 +433,4 @@ padding: 1rem;
     margin-left:200px; /* this should be the same width as the parent list item */
     margin-top:-35px; /* aligns top of sub menu with top of list item */
     }
+
