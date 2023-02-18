@@ -57,19 +57,34 @@ p {
 
 img {
 
-    width:100%;
+    width:70%;
 }
 /* navbar */
+
+.navbar .logo {
+
+    font-size: 42px;
+    font-weight: 300;
+}
+
+.navbar .flex {
+
+    justify-content: flex-start;
+    padding-top: 23px;
+}
 
 .navbar {
 
     background-color: #047aed;
     color: #fff;
-    height: 190px;
+    height: 200px;
+    align-items: start;
 }
+
 
 .navbar .flex {
 
+    align-items: start;
     justify-content: space-between;
 }
 .navbar ul {
@@ -86,26 +101,28 @@ img {
 
     color:#fff;
     padding: 10px;
-    margin: 0 5 px;
+    margin: 0 5px;
+    font-size: 28px;
 }
 
 .oferta_navbar {
 
     background-color: #047aed;
+    padding: 20px 30px;
 }
 .oferta_navbar a {
 
     text-align: center;
     font-size: 20px;
     font-weight: bold;
-    color:#333;
-    padding: 8px;
-    margin: 4px;
+    color:#fff;
+    padding: 0 8px;
+    margin:15px;
 }
-.oferta_navbar p {
 
-    background-color: #581010;
-}
+.oferta_navbar a:hover {
+    border-bottom: 3px #fff solid;
+  }
 /* showcase */
 
 .showcase {
@@ -198,6 +215,23 @@ img {
     transform: skewY(-2deg);
 }
 
+/*main-text */
+
+.miesko {
+
+    background-color: #d3d8df;
+}
+
+.miesko div {
+
+    padding: 15px;
+}
+
+.miesko .card i {
+    margin-right: 20px;
+  }
+  
+
 /* stats */
 
 .stats {
@@ -235,6 +269,7 @@ img {
 
     font-size: 16px;
     padding: 4px;
+    text-align: center;
 
 }
 
@@ -302,6 +337,11 @@ img {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+.grid-2-2 {
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
 
 
 .my-1 {
