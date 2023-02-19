@@ -75,9 +75,9 @@ img {
 
 .navbar {
 
-    background-color: #047aed;
+    background-color: #b8babc;
     color: #fff;
-    height: 200px;
+    height: 100px;
     align-items: start;
 }
 
@@ -107,7 +107,7 @@ img {
 
 .oferta_navbar {
 
-    background-color: #047aed;
+    background-color: #b8babc;
     padding: 20px 30px;
 }
 .oferta_navbar a {
@@ -178,7 +178,7 @@ animation-delay: 5s;
 .showcase {
 
     height: 400px;
-    background-color:#047aed;
+    background-color:#b8babc;
     color: #fff;
     position: relative;
     padding-left: 10px;
@@ -540,7 +540,7 @@ padding: 1rem;
     display:block;
     position:relative;
     float:left;
-    background: #047aed; /* menu background color */
+    background: #b8babc; /* menu background color */
     }
 .navbar .nav li a {
     display:block;
@@ -552,7 +552,7 @@ padding: 1rem;
     color:#ffffff; /* list item font color */
     }
 .navbar .nav li li a {font-size:100%;} /* smaller font size for sub menu items */
-.navbar .nav li:hover {background:#047aed;} /* highlights current hovered list item and the parent list items when hovering over sub menues */
+.navbar .nav li:hover {background:#b8babc;} /* highlights current hovered list item and the parent list items when hovering over sub menues */
 .navbar .nav ul {
     position:absolute;
     overflow: hidden;
@@ -567,4 +567,3 @@ padding: 1rem;
     margin-left:200px; /* this should be the same width as the parent list item */
     margin-top:-35px; /* aligns top of sub menu with top of list item */
     }
-
