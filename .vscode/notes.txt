@@ -1,0 +1,6 @@
+1. fix the problem with dropdown menu at mobile version
+2. what to do with oferta in footer? DONE
+3. problem with size in mobile in certyfikacja page
+4. add hover border bottom at footer
+5. change the size of main navbar
+6. fix navbar on each site
