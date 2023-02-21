@@ -91,6 +91,8 @@ img {
 .navbar ul {
 
     display:flex;
+    padding: 15px;
+    gap:40px;
 }
 
 .navbar a:hover {
@@ -104,6 +106,7 @@ img {
     padding: 10px;
     margin: 0 5px;
     font-size: 28px;
+    justify-content: center;
 }
 
 .oferta_navbar {
@@ -152,12 +155,13 @@ img {
 
     position: relative;
     top: 1px;
-    height: 350px;
+    height: 400px;
     width: 500px;
     padding: 40px;
     z-index: 100;
     left:30px;
     justify-self: flex-end;
+    font-size: 10px;
 }
 
 .showcase-form .form-control {
@@ -185,11 +189,12 @@ img {
     display:inline-block;
     padding: 10px 30px;
     cursor: pointer;
-    background-color: #047aed;
+    background-color: #b8babc;
     color: #fff;
     border: none;
     border-radius: 5px;
     font-size: 16px;
+    margin: -10px 0px;
 }
 
 .btn-outline {
@@ -224,7 +229,7 @@ img {
 
 .showcase-contact {
 
-    height: 490px;
+    height: 600px;
     background-color:#b4becb;
     color: #333;
     position: static;
@@ -452,20 +457,30 @@ padding: 1rem;
 /* mobile */
 @media (max-width:500px) {
 
+    .container {
+
+        width: 100%;
+    }
+    
     .navbar {
 
-        height: 110px;
-    
+        height: 150px;
     }
+
     .navbar .flex {
         flex-direction: column;
-
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
     }
+
     .navbar ul {
 
-        padding: 10px;
-        background-color: rgba(0,0,0,1);
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
+
+
 
     .gird,
     .showcase .grid {
@@ -486,6 +501,16 @@ padding: 1rem;
         justify-self: center;
         margin: auto;
     }
+
+    .slideshow-container .text {
+
+        display: none;
+    }
+
+    .slideshow-container .slidebtn {
+        display:none
+    }
+
 }
 
 /* dropdown */
