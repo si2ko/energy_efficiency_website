@@ -389,7 +389,7 @@ img {
 
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    max-height: 200px;
+    max-height: 130px;
 }
 
 .hidden {
