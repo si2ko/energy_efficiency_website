@@ -267,6 +267,15 @@ img {
     align-items: center;
 }
 
+.showcase-contact textarea
+{
+    height:110px;
+    width: 450px;
+    font-size:16px;
+    position: static;
+    resize:none;
+}
+
 
 /*main-text */
 
@@ -503,22 +512,19 @@ padding: 1rem;
     .showcase .grid {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
-        height:420px;
+        
     }
 
     .showcase {
 
-        height:auto
+        height:440px;
     }
     .showcase-text {
 
         text-align: center;
-        margin-top: 30px;
+        margin-top: 0px;
     }
-    .showcase-form {
-        justify-self: center;
-        margin: auto;
-    }
+
 
     /* stats */
 
@@ -528,7 +534,43 @@ padding: 1rem;
         grid-template-rows: 1fr;
     }
 
+    /*showcase contact */
+
+    .showcase-contact .grid {
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .showcase-contact {
+        height: 100%;
+    }
+
+    .showcase-form {
+
+        height: 420px;
+        width: 390px;
+        left: 0;
+    }
+
+    .showcase-contact textarea
+    {
+    max-height:150px !important;
+    max-width:350px !important;
+    }
+
+    .showcase-contact h2 {
+
+    letter-spacing: 2px;
+    font-weight: bold;
+    border-bottom: 1px groove;
+    border-bottom-width: thin;
+    text-align: center;
+    font-size: 31px;
+    }
 }
+
+
 
 /* dropdown */
 
