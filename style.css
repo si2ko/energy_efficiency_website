@@ -635,17 +635,17 @@ padding: 1rem;
         height: 100%;
     }
 
-    .showcase-form {
-
-        height: 420px;
-        width: 390px;
+    .showcase-form 
+        {
+        height: 400px;
+        width: 280px;
         left: 0;
     }
 
     .showcase-contact textarea
     {
-    max-height:150px !important;
-    max-width:350px !important;
+    max-height:100px !important;
+    max-width:250px !important;
     }
 
     .showcase-contact h2 {
@@ -655,7 +655,7 @@ padding: 1rem;
     border-bottom: 1px groove;
     border-bottom-width: thin;
     text-align: center;
-    font-size: 31px;
+    font-size: 20px;
     }
 
     /* oferta_navbar */
