@@ -126,6 +126,10 @@ img {
     border-bottom: 3px #fff solid;
   }
 
+.stopka {
+
+    display:none;
+}
 /* showcase */
 
 
@@ -448,6 +452,11 @@ padding: 1rem;
     color : #fff;
   }
 
+#mobile_add {
+
+    display:none;
+}
+
 /* tablet and under */
 
 @media(max-width: 768px) {
@@ -515,6 +524,19 @@ padding: 1rem;
         row-gap:20px;
     }
 
+    .stopka {
+
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        height: 100%;
+    }
+
+    .stopka h1 {
+
+        justify-items: center;
+    }
+
     /*navbar_oferta */
 
     .oferta_navbar .grid-3 {
@@ -522,6 +544,16 @@ padding: 1rem;
         grid-template-columns: 1fr;
         background-color: rgb(96, 153, 244);
         border-radius: 5px;
+    }
+
+    .navbar .nav {
+
+        display: none;
+    }
+
+    .oferta  {
+
+        height:40px;
     }
 
     .miesko .grid {
@@ -635,22 +667,38 @@ padding: 1rem;
         align-items: center;
         padding: 10px;
     }
-    .nav {
+    .nav ul {
 
         display: grid;
         grid-template-columns: 1fr 1fr;
         position:relative;
         left: 10px;
-        width: 105%;
+        padding-bottom: 15px;
     }
 
+    #mobile_add {
+
+        display: flex;
+    }
+    .card a {
+
+        color: #000;
+        text-align: left;
+    }
+
+
+
+
+
+
+    /* footer */
     .footer .grid-3 {
 
         grid-template-columns: 1fr;
+        row-gap: 11px;
     }
     
 }
-
 
 
 /* dropdown */
