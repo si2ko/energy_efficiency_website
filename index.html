@@ -119,17 +119,34 @@
     </style>
 </head>
 <body>
-    <!--Navabr-->
-    <div class="navbar">
-        <div class="container flex">
-            <h1 class="logo">AENERGIS</h1>
-            <ul>
-                    <li><a href="#">blog</a></li>
-                    <li><a href="swiadectwo_budynku.html">oferta</a></li>
-                    <li><a href="kontakt.html">kontakt</a></li>
-            </ul>
-        </div>
-    </div>
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="active1">strona główna</a>
+    <a href="#news">blog</a>
+    <div class="dropdown">
+      <button class="dropbtn">oferta 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="swiadectwo_budynku.html">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div> 
+    <a href="kontakt.html">kontakt</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+  
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+    }
+  </script>
+  
 
     
     <div class="slideshow-container">

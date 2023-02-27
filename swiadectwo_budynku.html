@@ -8,29 +8,34 @@
     <title>own_webiste/oferta</title>
 </head>
 <body>
-    <!--Navabr-->
-    <div class="navbar" style="height:200px">
-        <div class="container flex">
-            <h1 class="logo">AENERGIS</h1>
-            <ul class="nav">
-                    <li><a href="index.html">strona główna</a></li>
-                    <li><a href="#">oferta</a>
-                    <ul>
-                        <li><a href="audyt energetyczny przedsiębiorstwa.html">audyt</a></li>
-                        <li><a href="czyste_powietrze.html">Czyste Powietrze</a></li>
-                    </ul>
-            </ul>
-        </div>
+    <div class="topnav" id="myTopnav">
+        <a class="logo">AENERGIS</a>
+        <a href="index.html">strona główna</a>
+        <a href="#news">blog</a>
+        <div class="dropdown">
+          <button class="dropbtn active1">oferta 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="swiadectwo_budynku.html">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div> 
+        <a href="kontakt.html">kontakt</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
 
-    <!--Common oferta navbar-->
-    <div class="oferta_navbar">
-        <div class="container grid grid-3">
-            <a style="border:2px #fff solid; border-radius: 6px;">świadectwo charakterystyki energetycznej budynku</a>
-            <a href="swiadectwo_lokalu.html">świadectwo charakterystyki energetycznej lokalu mieszkalnego</a>
-            <a href="swiadectwo_wielkokubaturowy.html">świadectwo charakterystyki energetycznej budynku wielokubaturowego</a>
-        </div>
-    </div>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+          }
+    </script>
 
     <!--Main text-->
     <section class="miesko">

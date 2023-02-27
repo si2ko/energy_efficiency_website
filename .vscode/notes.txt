@@ -1,6 +1,11 @@
-1. fix the problem with dropdown menu at mobile version
+1. fix the problem with dropdown menu at mobile version DONE
 2. what to do with oferta in footer? DONE
-3. problem with size in mobile in certyfikacja page
-4. add hover border bottom at footer
-5. change the size of main navbar
-6. fix navbar on each site
+3. problem with size in mobile in certyfikacja page DONE
+4. add hover border bottom at footer 
+5. change the size of main navbar DONE
+6. fix navbar on each site DONE
+7. slide autorun?
+8. input box in form is too small DONE
+9. add spam filter to form
+10. animation at oferta dropdown?
+11. height of simple navbar in oferta site is too big

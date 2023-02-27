@@ -8,16 +8,34 @@
     <title>own_webiste</title>
 </head>
 <body>
-    <!--Navabr-->
-    <div class="navbar"style="height:200px">
-        <div class="container flex" style="justify-content: flex-end">
-            <ul>
-                    <li><a href="index.html">strona główna</a></li>
-                    <li><a href="#">blog</a></li>
-                    <li><a href="swiadectwo_budynku.html">oferta</a></li>
-            </ul>
-        </div>
+    <div class="topnav" id="myTopnav">
+        <a class="logo">AENERGIS</a>
+        <a href="index.html">strona główna</a>
+        <a href="#news">blog</a>
+        <div class="dropdown">
+          <button class="dropbtn">oferta 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="swiadectwo_budynku.html">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div> 
+        <a href="kontakt.html" class="active1">kontakt</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+          }
+    </script>
 
     <!--Showcase-->
     <section class="showcase-contact">
@@ -61,7 +79,7 @@
     
     <!--Footer-->    
     <footer class="footer bg-dark py-5">
-        <div class="container grid grid-3">
+        <div class="container grid grid-2">
             <div>
                 <h1>Nazwa firmy </h1>
                 <p>Copyright &copy; 2023</p>
