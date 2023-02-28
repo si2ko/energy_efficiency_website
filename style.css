@@ -136,7 +136,7 @@ img {
 .showcase {
 
     height: 316px;
-    background-color:#b8babc;
+    background-color:#989898;
     color: #fff;
     position: relative;
     padding-left: 10px;
@@ -436,7 +436,7 @@ padding: 1rem;
 
 .bg-dark,
 .btn-dark {
-    background-color: #131058;
+    background-color: #200a9e;
     color: #333;
   }
 .details {
@@ -569,8 +569,8 @@ padding: 1rem;
 
     .slideshow-container .text {
 
-        font-size: 15px;
-        bottom: 70px;
+        font-size:9px;
+        bottom: 90px;
     }
 
     .slideshow-container .slidebtn {
@@ -720,7 +720,7 @@ padding: 1rem;
 }
   
 .active1 {
-    color: #e5ed0d !important;
+    color: #07d53a !important;
 }
   
 .topnav .icon {
@@ -780,9 +780,8 @@ padding: 1rem;
 
 .topnav .logo {
 
-    font-size: 25px;
-    padding-right: 20px;
-
+    font-size: 20px;
+    padding-right: 10px;
     width: 190px;
 }
   
