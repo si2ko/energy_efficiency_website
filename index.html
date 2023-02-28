@@ -14,7 +14,7 @@
         /* Slideshow container */
         .slideshow-container {
           max-width: 1920px;
-          max-height: auto;
+          max-height:fit-content;
           position: relative;
         }
         
@@ -48,25 +48,25 @@
         /* Caption text */
         .text {
           color: #f2f2f2;
-          font-size: 70px;
-          padding: 8px 12px;
+          font-size: 30px;
           position: absolute;
-          bottom: 150px;
+          bottom: 440px;
           width: 100%;
           text-align: center;
+          text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; 
         }
         
         /*slide button */
 
         .slidebtn {
-          color: #f2f2f2;
+          background-color: #989898;
           font-size: 30px;
           font-weight: bolder;
           padding: 8px 12px;
           position: absolute;
-          left: 40%;
-          bottom: 110px;
-          text-align: left;    
+          left:36%;
+          bottom: 350px;
+          border-radius: 7px;
         }
 
         /* Number text (1/3 etc) */
@@ -76,7 +76,7 @@
           padding: 8px 12px;
           font-weight: bold;
           position: absolute;
-          top: 0;
+          bottom: 0;
         }
         
         /* The dots/bullets/indicators */
@@ -95,11 +95,6 @@
           background-color: #000;
         }
 
-        .slidebtn:hover {
-
-            border-bottom: 3px solid #fff;
-
-        }
         
         /* Fading animation */
         .fade {
@@ -114,12 +109,13 @@
         
         /* On smaller screens, decrease text size */
         @media only screen and (max-width: 300px) {
-          .prev, .next,.text {font-size: 11px}
+          .prev, .next,.text {font-size: 10px}
         }
     </style>
 </head>
 <body>
   <div class="topnav" id="myTopnav">
+    <a class="logo">AENERGY</a>
     <a href="index.html" class="active1">strona główna</a>
     <a href="#news">blog</a>
     <div class="dropdown">
@@ -127,13 +123,15 @@
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
-        <a href="swiadectwo_budynku.html">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
+        <a href="swiadectwo_budynku.html">Świadectwo charakterystyki energetycznej</a>
+        <a href="swiadectwo_budynku.html">Projektowa charakterystyka energetyczna</a>
+        <a href="#">Audyt energetyczny</a>
+        <a href="#">Audyt energetyczny przedsiębiorstwa</a>
+        <a href="#">Audyt remontowy</a>
       </div>
     </div> 
     <a href="kontakt.html">kontakt</a>
-    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    <a href="javascript:void(0);" style="font-size:15px;background-color: #333;" class="icon" onclick="myFunction()">&#9776;</a>
   </div>
   
   <script>
@@ -153,23 +151,23 @@
 
         <div class="mySlides fade">
           <div class="numbertext">1 / 3</div>
-          <img src="img1.jpg" style="width:100%">
-          <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-          <a class="slidebtn" href="swiadectwo_budynku.html">SPRAWDŹ OFERTĘ</a>
+          <img src="img1.jpeg" style="width:100%">
+          <div class="text">efektywność energetyczna |  budownictwo  |  certyfikacja</div>
+          <a class="slidebtn" href="swiadectwo_budynku.html">Sprawdź naszą ofertę!</a>
         </div>
         
         <div class="mySlides fade">
           <div class="numbertext">2 / 3</div>
-          <img src="img2.jpg" style="width:100%">
-          <div class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
-          <a class="slidebtn" href="swiadectwo_budynku.html">SPRAWDŹ OFERTĘ</a>
+          <img src="img21.jpg" style="width:100%">
+          <div class="text">efektywność energetyczna |  budownictwo  |  certyfikacja</div>
+          <a class="slidebtn" href="swiadectwo_budynku.html">Sprawdź naszą ofertę!</a>
         </div>
         
         <div class="mySlides fade">
           <div class="numbertext">3 / 3</div>
           <img src="img3.jpg" style="width:100%">
-          <div class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
-          <a class="slidebtn" href="swiadectwo_budynku.html">SPRAWDŹ OFERTĘ</a>
+          <div class="text">efektywność energetyczna |  budownictwo  |  certyfikacja</div>
+          <a class="slidebtn" href="swiadectwo_budynku.html">Sprawdź naszą ofertę!</a>
         </div>
         
         <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -177,7 +175,7 @@
         
     </div>
         
-        <div style="text-align:center;background-color: #b8babc">
+        <div style="text-align:center;background-color: #989898">
           <span class="dot" onclick="currentSlide(1)"></span> 
           <span class="dot" onclick="currentSlide(2)"></span> 
           <span class="dot" onclick="currentSlide(3)"></span> 
@@ -195,21 +193,22 @@
           showSlides(slideIndex = n);
         }
         
-        function showSlides(n) {
+        function showSlides() {
           let i;
           let slides = document.getElementsByClassName("mySlides");
           let dots = document.getElementsByClassName("dot");
-          if (n > slides.length) {slideIndex = 1}    
-          if (n < 1) {slideIndex = slides.length}
           for (i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";  
-          }
-          for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";  
-          dots[slideIndex-1].className += " active";
         }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
         </script>
         
 
@@ -252,7 +251,7 @@
     <footer class="footer bg-dark py-5">
         <div class="container grid grid-3">
             <div>
-                <h1>AENERGIS</h1>
+                <h1>AENERGY</h1>
                 <p>Copyright &copy; 2023</p>
             </div>
             <nav>
