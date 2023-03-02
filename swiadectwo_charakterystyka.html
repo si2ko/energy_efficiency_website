@@ -1,0 +1,100 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Aenergis</title>
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a class="logo">AENERGIS</a>
+        <a href="index.html">strona główna</a>
+        <a href="#news">blog</a>
+        <div class="dropdown">
+          <button class="dropbtn active1">oferta 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="swiadectwo_budynku.html">Projektowa charakterystyka energetyczna</a>
+            <a href="#">Audyt energetyczny</a>
+            <a href="#">Audyt energetyczny przedsiębiorstwa</a>
+            <a href="#">Audyt remontowy</a>
+          </div>
+        </div> 
+        <a href="kontakt.html">kontakt</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+          }
+    </script>
+
+    <!--Main text-->
+    <section class="miesko">
+        <div class="container grid">
+            <div class="card flex">
+                <i class="fa-solid fa-section fa-3x"></i>
+                <p>Świadectwo charakterystyki energetycznej jest dokumentem, który określa zapotrzebowanie budynku lub jego części na energię pierwotną oraz co bardziej będzie interesować użytkowników energię końcową. Charakterystyka energetyczna wykonana musi być zgodnie z metodologią zawartą w rozporządzeniu Ministra Infrastruktury i Rozwoju z dnia 18 marca 2015 r.</p>
+            </div>
+            <div class="card flex">
+                <i class="fas fa-section fa-3x"></i>
+                <p>W dniu 7 października 2022 r. wprowadzony został szereg istotnych zmiana w Ustawie o charakterystyce energetycznej budynków lub ich części. Zmiany te wejdą w życie w raz z dniem 28 kwietnia 2023 r. Wprowadzone zmiany dotyczą obowiązku sporządzania oraz przekazywania dokumentu charakterystyki energetycznej. Nasi specjaliści z zakresu certyfikacji energetycznej pomogą Państwu sprostać zmianom w prawie!
+
+                </p>
+
+            </div>
+            <div class="card flex">
+                <i class="fa-solid fa-section fa-3x"></i>
+                <ul style="list-style-type: disc;">
+                    <li>Właściciel lub zarządca budynku jest obowiązany do nieodpłatnego przekazania kopii świadectwa charakterystyki energetycznej budynku właścicielowi części budynku.</li>
+                    <li>Właściciel lub zarządca budynku lub jego części (lokalu mieszkalnego) ma obowiązek przekazać nabywcy lub najemcy świadectwo charakterystyki energetycznej przy sporządzaniu aktu notarialnego zbycia prawa własności lub kopię świadectwa przy zawarciu umowy najmu.</li>
+                    <li>Właściciel lub zarządca budynku lub jego częsci (lokalu mieszkalnego) ma obowiązek podania w reklamie sprzedaży lub najmu wskaźnika rocznego zapotzrebowania na energię końcową.</li>
+                </ul>
+            </div>
+            <div class="card flex">
+                <i class="fa-solid fa-tree-city fa-3x"></i>
+                <p>Wszystkie opisne zmiany prawne podkreślają znacznie świadectwa charakterystyki energetycznej. Od czego w takim razie zależą uzyskane w niej wskaźniki? Przede wszystkim od systemów ogrzewania, chłodzenia, przygotowania ciepłej wody użytkowej oraz wbudowanego oświetlenia oraz dodatkowo od specyfiki cieplnej przegród budowlanych w budynku lub jego części. Taka identyfikacja zużycia energii pozwala wyznaczyć wskaźnik nieodnawialnej energii pierwotnej wyrażony w kWh/m&#178; powierzchni ogrzewanej. </p>
+            </div>
+            <div class="card flex">
+                <i class="fa-solid fa-chart-simple fa-3x"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, ut fugiat reprehenderit placeat voluptatibus blanditiis quidem ullam modi culpa sequi.</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <!--Footer-->    
+    <footer class="footer bg-dark py-5">
+        <div class="container grid grid-3">
+            <div>
+                <h1>Nazwa firmy </h1>
+                <p>Copyright &copy; 2023</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">strona główna</a></li>
+                    <li><a href="oferta.html">oferta</a></li>
+                    <li><a href="blog.html">blog</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <ul>
+                    <li><i class="fa-solid fa-phone"></i><h5>56738238</h5></li>
+                    <li><i class="fa-solid fa-envelope "></i><h5>biuro@wp.pl</h5></li>
+                    <li><i class="fa-sharp fa-solid fa-circle-dot"></i><h5>239298382839</h5></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+</html>
