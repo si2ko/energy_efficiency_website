@@ -135,7 +135,7 @@ img {
 
 .showcase {
 
-    height: 316px;
+    height: 370px;
     background-color:#989898;
     color: #fff;
     position: relative;
@@ -151,6 +151,10 @@ img {
 .showcase p {
 
     margin: 20px 0px;
+    font-size: 18px;
+    width: 1000px;
+    justify-content: center;
+    text-align: left;
 }
 
 .showcase-form {
@@ -160,7 +164,7 @@ img {
     height: 400px;
     width: 500px;
     padding: 40px;
-    z-index: 100;
+    z-index: 0;
     left:30px;
     justify-self: flex-end;
     font-size: 10px;
@@ -284,6 +288,7 @@ img {
 .miesko {
 
     background-color: #d3d8df;
+    font-size: 18px;
 }
 
 .miesko div {
@@ -298,33 +303,39 @@ img {
 
 /* stats */
 
+.stats h1 {
+
+    font-size:40px;
+}
 .stats {
 
-    padding-top: 100px;
-    text-align: center;
+    padding-top: 80px;
+    text-align: left;
+    text-justify: auto;
 }
 
 .text_center {
 
     justify-content: center;
-    text-align: center;
+    text-align: left;
 }
 
 .stats-heading {
 
-    max-width: 500px;
-    margin: auto;
+    max-width: 1050px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 .stats h3 {
 
-    font-size: 24px;
+    font-size: 18px;
     font-weight: normal;
 }
 
 .stats p {
 
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
 }
 /* footer */
@@ -606,15 +617,18 @@ padding: 1rem;
         
     }
 
-    .showcase {
+    .showcase p {
 
-        height:480px;
+        width: auto;
+        height: auto;
+        padding-bottom: 15px;
     }
-    .showcase-text {
 
-        text-align: center;
-        margin-top: 0px;
+    .showcase .btn {
+
+        display: none;
     }
+
 
 
     /* stats */
@@ -659,6 +673,7 @@ padding: 1rem;
     text-align: center;
     font-size: 20px;
     }
+
 
     /* oferta_navbar */
 
